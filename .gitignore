@@ -1,0 +1,19 @@
+# Environnements
+.venv/
+__pycache__/
+*.pyc
+
+# Jeux de données engendrés — ne JAMAIS versionner
+00-data/sortie/
+*.csv
+*.json
+!**/exemples/*.csv
+!**/exemples/*.json
+
+# Notebooks : sorties locales
+.ipynb_checkpoints/
+
+# Divers
+.DS_Store
+Thumbs.db
+.env

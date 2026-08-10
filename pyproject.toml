@@ -1,0 +1,15 @@
+[project]
+name = "formation-python"
+version = "1.0.0"
+description = "Formation Python — Fondamentaux et analyse de données (contexte administration fiscale)"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=2.2",
+    "jupyterlab>=4.2",
+    "openpyxl>=3.1",
+    "matplotlib>=3.9",
+]
+
+[tool.uv]
+package = false

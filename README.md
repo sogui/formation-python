@@ -151,5 +151,5 @@ module.
 
 ---
 
-*Formation conçue pour la montée en compétences des agents de la DGI
-(Direction Générale des Impôts, Guinée-Bissau) — données pédagogiques fictives.*
+*Formation conçue pour la montée en compétences des agents de la DGCI
+(Direção Geral das Contribuições e Impostos, Guinée-Bissau) — données pédagogiques fictives.*

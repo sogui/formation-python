@@ -1,7 +1,8 @@
 # Supports projetés
 
-Un PDF par journée, à projeter tel quel. Les sources PowerPoint modifiables
-sont dans `sources/`.
+Un support par journée, disponible en **PowerPoint** (`sources/*.pptx`, modifiable)
+et en **PDF** (à projeter tel quel). Les logos officiels (DGCI, Ministère) sont
+dans `sources/assets/`.
 
 | Fichier | Journée | Modules couverts |
 | ------- | ------- | ---------------- |

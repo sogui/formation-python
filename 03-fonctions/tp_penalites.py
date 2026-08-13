@@ -36,12 +36,12 @@ assert taux_penalite(2000) == 0.50
 
 # --- 3. Montant final -------------------------------------------------------
 def penalite(tva_due: int, jours_retard: int) -> int:
-    """Montant de la pénalité, arrondi au GNF."""
+    """Montant de la pénalité, arrondi au FCFA."""
     # À COMPLÉTER : une seule ligne suffit.
     ...
 
 
-print(f"Pénalité (TVA 8 100 000, 45 j de retard) : {penalite(8_100_000, 45):,} GNF")
+print(f"Pénalité (TVA 8 100 000, 45 j de retard) : {penalite(8_100_000, 45):,} FCFA")
 
 # --- 4. Pour aller plus loin ------------------------------------------------
 # Ajoutez un paramètre nommé `taux_base=0.10` à taux_penalite() et vérifiez

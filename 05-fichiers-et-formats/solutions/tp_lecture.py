@@ -21,15 +21,15 @@ for code, n in sorted(compte.items(), key=lambda kv: -kv[1]):
     print(f"{regions.get(code, code):12s} : {n}")
 
 with open(DATA / "contribuables.csv", encoding="utf-8") as f_in, \
-     open(Path(__file__).parent / "extrait_conakry.csv", "w",
+     open(Path(__file__).parent / "extrait_bissau.csv", "w",
           newline="", encoding="utf-8") as f_out:
     lecteur = csv.DictReader(f_in)
     scribe = csv.DictWriter(f_out, fieldnames=lecteur.fieldnames)
     scribe.writeheader()
     for ligne in lecteur:
-        if ligne["code_region"] == "CKY":
+        if ligne["code_region"] == "BIS":
             scribe.writerow(ligne)
-print("extrait_conakry.csv écrit.")
+print("extrait_bissau.csv écrit.")
 
 with open(DATA / "dossiers_fiscaux.json", encoding="utf-8") as f:
     dossiers = json.load(f)

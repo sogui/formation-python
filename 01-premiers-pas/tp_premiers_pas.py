@@ -8,8 +8,8 @@ Complétez les passages marqués « À COMPLÉTER », puis exécutez :
 # Un contribuable est décrit par quelques informations élémentaires.
 
 nif = "100004512"
-raison_sociale = "  ets fatoumata diallo  "   # saisie brute, mal formatée
-chiffre_affaires = 45_000_000                  # en GNF
+raison_sociale = "  ets fatumata djaló  "   # saisie brute, mal formatée
+chiffre_affaires = 45_000_000                  # en FCFA
 taux_tva = 0.18
 
 # --- 2. Nettoyage de la raison sociale -------------------------------------
@@ -23,8 +23,8 @@ tva = ...
 
 # --- 4. Affichage formaté ---------------------------------------------------
 # À COMPLÉTER : affichez avec une f-string, au format :
-#   Contribuable 100004512 — Ets Fatoumata Diallo
-#   CA : 45 000 000 GNF | TVA : 8 100 000 GNF
+#   Contribuable 100004512 — Ets Fatumata Djaló
+#   CA : 45 000 000 FCFA | TVA : 8 100 000 FCFA
 # Astuce : le format {valeur:,} insère des séparateurs de milliers
 # et .replace(",", " ") les transforme en espaces.
 print(...)

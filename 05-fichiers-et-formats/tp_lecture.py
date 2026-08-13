@@ -23,10 +23,10 @@ for code, n in sorted(compte.items(), key=lambda kv: -kv[1]):
     print(f"{regions.get(code, code):12s} : {n}")
 
 # --- 3. Écrire un extrait ---------------------------------------------------
-# À COMPLÉTER : écrivez dans extrait_conakry.csv (dans CE dossier) les seuls
-# contribuables de la région CKY, avec csv.DictWriter (mêmes colonnes).
+# À COMPLÉTER : écrivez dans extrait_bissau.csv (dans CE dossier) les seuls
+# contribuables du secteur autonome de Bissau, région BIS (Bissau), avec csv.DictWriter (mêmes colonnes).
 ...
-print("extrait_conakry.csv écrit.")
+print("extrait_bissau.csv écrit.")
 
 # --- 4. JSON imbriqué -------------------------------------------------------
 # À COMPLÉTER : chargez dossiers_fiscaux.json et comptez combien de dossiers

@@ -88,7 +88,7 @@ Chaque module contient un `README.md` ainsi que des exercices à compléter.
 Tous sont **engendrés localement** : aucun téléchargement, aucune dépendance
 extérieure. Ils reproduisent des données d'une administration fiscale —
 contribuables identifiés par NIF, déclarations, paiements, régions et
-préfectures de Guinée — avec les imperfections des fichiers administratifs :
+secteurs de Guinée-Bissau — avec les imperfections des fichiers administratifs :
 libellés incohérents, valeurs aberrantes, formats de date multiples, doublons.
 
 | Générateur                  | Produit                                               |
@@ -151,5 +151,5 @@ module.
 
 ---
 
-*Formation conçue pour la montée en compétences des agents — contexte
-d'administration fiscale (données pédagogiques fictives).*
+*Formation conçue pour la montée en compétences des agents de la DGI
+(Direction Générale des Impôts, Guinée-Bissau) — données pédagogiques fictives.*

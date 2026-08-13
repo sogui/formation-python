@@ -28,4 +28,4 @@ def penalite(tva_due: int, jours_retard: int) -> int:
     return round(tva_due * taux_penalite(jours_retard))
 
 
-print(f"Pénalité (TVA 8 100 000, 45 j de retard) : {penalite(8_100_000, 45):,} GNF")
+print(f"Pénalité (TVA 8 100 000, 45 j de retard) : {penalite(8_100_000, 45):,} FCFA")

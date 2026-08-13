@@ -19,10 +19,10 @@ random.seed(2026)
 
 SORTIE = Path(__file__).parent / "sortie"
 
-PRENOMS = ["Mamadou", "Fatoumata", "Ibrahima", "Aissatou", "Ousmane", "Mariama",
-           "Alpha", "Kadiatou", "Sékou", "Aminata"]
-NOMS = ["Diallo", "Bah", "Barry", "Sow", "Camara", "Condé", "Touré", "Sylla", "Keita", "Soumah"]
-VILLES = ["Conakry", "Kindia", "Kankan", "Labé", "Nzérékoré", "Boké", "Mamou", "Faranah"]
+PRENOMS = ["Mamadú", "Fatumata", "Braima", "Aissatu", "Umaro", "Mariama",
+           "Domingos", "Quinta", "Seco", "Aminata"]
+NOMS = ["Djaló", "Baldé", "Embaló", "Mané", "Sané", "Vieira", "Gomes", "Sanhá", "Có", "Camará"]
+VILLES = ["Bissau", "Bafatá", "Gabú", "Canchungo", "Farim", "Buba", "Catió", "Bolama"]
 REGIMES = ["Forfait", "Réel simplifié", "Réel normal"]
 
 

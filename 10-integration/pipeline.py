@@ -3,7 +3,7 @@
 Lit les jeux de données, valide, nettoie, agrège, produit un rapport.
 Entièrement fourni : c'est le modèle du projet final.
 
-    uv run python pipeline.py --region CKY
+    uv run python pipeline.py --region BIS
     uv run python pipeline.py --toutes
 """
 
@@ -113,7 +113,7 @@ def rapport(ensemble: pd.DataFrame, code_region: str | None) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser(description="Chaîne complète TVA.")
     groupe = parser.add_mutually_exclusive_group(required=True)
-    groupe.add_argument("--region", help="Code région (ex. CKY)")
+    groupe.add_argument("--region", help="Code région (ex. BIS)")
     groupe.add_argument("--toutes", action="store_true", help="Toutes les régions")
     args = parser.parse_args()
 

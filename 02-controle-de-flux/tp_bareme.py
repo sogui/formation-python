@@ -1,7 +1,7 @@
 """TP 02 — Contrôle de flux : régimes d'imposition.
 
 Règle métier (simplifiée) :
-    CA < 100 000 000 GNF            → « Forfait »
+    CA < 100 000 000 FCFA            → « Forfait »
     100 000 000 ≤ CA < 500 000 000  → « Réel simplifié »
     CA ≥ 500 000 000                → « Réel normal »
 """

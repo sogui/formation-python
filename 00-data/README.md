@@ -14,7 +14,7 @@ Les fichiers sont produits dans `sortie/`, qui n'est **jamais versionné**.
 
 | Fichier | Contenu | Défauts volontaires |
 | ------- | ------- | ------------------- |
-| `regions.csv` | Référentiel régions/préfectures | Aucun (référence propre) |
+| `regions.csv` | Référentiel régions/secteurs (Guinée-Bissau) | Aucun (référence propre) |
 | `contribuables.csv` | Annuaire des contribuables (NIF) | Doublons, libellés incohérents, téléphones manquants |
 | `declarations.csv` | Déclarations TVA mensuelles | Dates multi-formats, CA aberrants, TVA manquante |
 | `paiements.csv` | Paiements | NIF orphelins, dates multi-formats |

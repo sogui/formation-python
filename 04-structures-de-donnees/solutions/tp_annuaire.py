@@ -1,11 +1,11 @@
 """TP 04 — Solution."""
 
 annuaire = [
-    {"nif": "100000001", "nom": "Ets Diallo", "region": "Conakry", "regime": "Forfait"},
-    {"nif": "100000002", "nom": "Barry & Frères", "region": "Kindia", "regime": "Réel normal"},
-    {"nif": "100000003", "nom": "Ets Camara", "region": "Conakry", "regime": "Réel simplifié"},
-    {"nif": "100000004", "nom": "Ets Sow", "region": "Labé", "regime": "Forfait"},
-    {"nif": "100000002", "nom": "Barry & Frères", "region": "Kindia", "regime": "Réel normal"},
+    {"nif": "100000001", "nom": "Ets Djaló", "region": "Bissau", "regime": "Forfait"},
+    {"nif": "100000002", "nom": "Embaló & Irmãos", "region": "Bafatá", "regime": "Réel normal"},
+    {"nif": "100000003", "nom": "Ets Camará", "region": "Bissau", "regime": "Réel simplifié"},
+    {"nif": "100000004", "nom": "Ets Sané", "region": "Gabú", "regime": "Forfait"},
+    {"nif": "100000002", "nom": "Embaló & Irmãos", "region": "Bafatá", "regime": "Réel normal"},
 ]
 
 par_region = {}

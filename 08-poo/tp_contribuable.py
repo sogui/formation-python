@@ -42,7 +42,7 @@ class Contribuable:
 
 
 # --- Mise à l'épreuve --------------------------------------------------------
-c = Contribuable("100000001", "Ets Diallo", "Réel normal")
+c = Contribuable("100000001", "Ets Djaló", "Réel normal")
 c.ajouter(Declaration("2025-01", 40_000_000, 7_200_000, 3_000_000))
 c.ajouter(Declaration("2025-02", 55_000_000, 9_900_000, 12_000_000))  # crédit !
 

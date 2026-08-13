@@ -35,26 +35,27 @@ SORTIE = Path(__file__).parent / "sortie"
 # ---------------------------------------------------------------------------
 
 REGIONS = {
-    "CKY": ("Conakry", ["Kaloum", "Dixinn", "Matam", "Ratoma", "Matoto"]),
-    "KIN": ("Kindia", ["Kindia", "Coyah", "Dubréka", "Forécariah", "Télimélé"]),
-    "BOK": ("Boké", ["Boké", "Boffa", "Fria", "Gaoual", "Koundara"]),
-    "LAB": ("Labé", ["Labé", "Koubia", "Lélouma", "Mali", "Tougué"]),
-    "MAM": ("Mamou", ["Mamou", "Dalaba", "Pita"]),
-    "FAR": ("Faranah", ["Faranah", "Dabola", "Dinguiraye", "Kissidougou"]),
-    "KAN": ("Kankan", ["Kankan", "Kérouané", "Kouroussa", "Mandiana", "Siguiri"]),
-    "NZE": ("Nzérékoré", ["Nzérékoré", "Beyla", "Guéckédou", "Lola", "Macenta", "Yomou"]),
+    "BIS": ("Bissau", ["Bissau"]),
+    "BAF": ("Bafatá", ["Bafatá", "Bambadinca", "Contuboel", "Galomaro", "Xitole"]),
+    "BIO": ("Biombo", ["Quinhámel", "Prábis", "Safim"]),
+    "BOL": ("Bolama-Bijagós", ["Bolama", "Bubaque", "Caravela"]),
+    "CAC": ("Cacheu", ["Cacheu", "Bula", "Canchungo", "Caió", "São Domingos"]),
+    "GAB": ("Gabú", ["Gabú", "Boé", "Pirada", "Pitche", "Sonaco"]),
+    "OIO": ("Oio", ["Farim", "Bissorã", "Mansabá", "Mansôa", "Nhacra"]),
+    "QUI": ("Quinara", ["Buba", "Empada", "Fulacunda", "Tite"]),
+    "TOM": ("Tombali", ["Catió", "Bedanda", "Cacine", "Quebo"]),
 }
 
 PRENOMS = [
-    "Mamadou", "Fatoumata", "Ibrahima", "Aissatou", "Ousmane", "Mariama",
-    "Alpha", "Kadiatou", "Sékou", "Aminata", "Thierno", "Hawa", "Lansana",
-    "Fanta", "Moussa", "Djénabou", "Abdoulaye", "Salématou", "Facinet", "Bintou",
+    "Mamadú", "Fatumata", "Braima", "Aissatu", "Umaro", "Mariama",
+    "Domingos", "Quinta", "Seco", "Aminata", "Carlos", "Iança",
+    "Bacar", "Djenabu", "Abdulai", "Salimatu", "Fodé", "Binta", "João", "N'Fanda",
 ]
 
 NOMS = [
-    "Diallo", "Bah", "Barry", "Sow", "Baldé", "Camara", "Condé", "Touré",
-    "Sylla", "Cissé", "Keita", "Kourouma", "Soumah", "Bangoura", "Kaba",
-    "Fofana", "Sano", "Traoré", "Konaté", "Yattara",
+    "Djaló", "Baldé", "Embaló", "Mané", "Sané", "Vieira", "Gomes", "Sanhá",
+    "Có", "Camará", "Cassamá", "Indjai", "Seidi", "Turé", "Nanque",
+    "Correia", "Pereira", "da Costa", "Sambú", "Dabó",
 ]
 
 SECTEURS = [
@@ -122,11 +123,11 @@ def gen_referentiel() -> None:
     chemin = SORTIE / "regions.csv"
     with open(chemin, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
-        w.writerow(["code_region", "region", "prefecture"])
+        w.writerow(["code_region", "region", "secteur_admin"])
         for code, (nom, prefs) in REGIONS.items():
             for p in prefs:
                 w.writerow([code, nom, p])
-    print(f"  {chemin.name} : référentiel des préfectures")
+    print(f"  {chemin.name} : référentiel des secteurs")
 
 
 def gen_contribuables(n: int) -> list[str]:
@@ -150,7 +151,7 @@ def gen_contribuables(n: int) -> list[str]:
             code_region = random.choice(list(REGIONS))
             date_imm = date_sale(random.randint(2010, 2025))
             # ~5 % de téléphones manquants
-            tel = "" if random.random() < 0.05 else f"6{random.randint(10000000, 99999999)}"
+            tel = "" if random.random() < 0.05 else f"9{random.choice([5, 6, 7])}{random.randint(1000000, 9999999)}"
             w.writerow([numero, rs, secteur, regime, code_region, date_imm, tel])
             # ~2 % de doublons purs (double saisie)
             if random.random() < 0.02:

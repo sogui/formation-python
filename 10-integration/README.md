@@ -13,7 +13,7 @@ Le script `pipeline.py` est **entièrement fourni et commenté** : lisez-le,
 exécutez-le, modifiez-le. Il constitue le modèle du projet final.
 
 ```bash
-uv run python pipeline.py --region CKY
+uv run python pipeline.py --region BIS
 uv run python pipeline.py --toutes
 ```
 

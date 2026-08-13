@@ -15,5 +15,5 @@ def taux_penalite(jours_retard: int, plafond: float = 0.50) -> float:
 
 
 def penalite(tva_due: int, jours_retard: int) -> int:
-    """Montant de la pénalité, arrondi au GNF."""
+    """Montant de la pénalité, arrondi au FCFA."""
     ...  # À COMPLÉTER
